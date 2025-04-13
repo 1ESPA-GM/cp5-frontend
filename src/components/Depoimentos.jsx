@@ -1,13 +1,13 @@
 function Depoimentos() {
     const users = [
-      { name: 'Lucas', text: 'O melhor app de música que já usei!', img: '/user1.jpg' },
-      { name: 'Ana', text: 'Playlists incríveis e fáceis de criar.', img: '/user2.jpg' },
-      { name: 'Carlos', text: 'Adoro como ele recomenda novos sons pra mim!', img: '/user3.jpg' },
+      { name: 'Lucas', text: 'O melhor app de música que já usei!', img: './src/assets/user1.jpg' },
+      { name: 'Ana', text: 'Playlists incríveis e fáceis de criar.', img: './src/assets/user2.jpg' },
+      { name: 'Carlos', text: 'Adoro como ele recomenda novos sons pra mim!', img: './src/assets/user3.jpg' },
     ]
   
     return (
       <section className="py-16 px-6 bg-gray-50 text-center">
-        <h2 className="text-3xl font-bold mb-10">O que estão dizendo?</h2>
+        <h2 className="text-3xl font-bold mb-10 text-emerald-800">O que estão dizendo?</h2>
         <div className="grid md:grid-cols-3 gap-10">
           {users.map((u, i) => (
             <div key={i} className="bg-white p-6 rounded shadow">

@@ -11,7 +11,7 @@ function Formulario() {
           />
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition"
+            className="bg-emerald-700 text-white px-6 py-3 rounded-md hover:bg-emerald-800 transition"
           >
             Enviar
           </button>
