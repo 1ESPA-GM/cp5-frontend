@@ -1,12 +1,49 @@
-# React + Vite
+Gustavo Naoto RM560470
+Felipe Marceli 560456
+Kauã Rodrigues RM559335
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎵 Melodia — Landing Page
+Uma landing page moderna e responsiva para o app de músicas Melodia, criada com React e TailwindCSS.
 
-Currently, two official plugins are available:
+🚀 Tecnologias
+React.js
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TailwindCSS
 
-## Expanding the ESLint configuration
+Vite
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Router DOM
+
+📌 Funcionalidades
+Hero com CTA animado e visual moderno
+
+Seções com apresentação do app, funcionalidades e depoimentos
+
+Página separada de músicas com player estilizado
+
+Menu com efeito de transparência e mudança ao rolar
+
+Formulário de contato
+
+Totalmente responsivo
+
+▶️ Como rodar
+bash
+Copiar
+Editar
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
+📁 Estrutura básica
+css
+Copiar
+Editar
+src/
+├── assets/
+├── components/
+├── routes/
+├── App.jsx
+├── main.jsx
+└── styles.css
