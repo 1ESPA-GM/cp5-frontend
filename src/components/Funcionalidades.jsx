@@ -1,24 +1,49 @@
+import sadImg from '../assets/sad.jpg'
+import compartilhaImg from '../assets/compartilha.jpg'
+import offlineImg from '../assets/offline.jpg'
+
+
 function Funcionalidades() {
-    const features = [
-      { title: 'Recomendações Inteligentes', desc: 'Sistema que aprende com você.' },
-      { title: 'Modo Offline', desc: 'Ouça suas músicas sem precisar de internet.' },
-      { title: 'Compartilhamento Fácil', desc: 'Compartilhe faixas com um clique.' }
+    const funcionalidades = [
+      {
+        titulo: 'Compartilhamento Fácil',
+        descricao: 'Compartilhe faixas com um clique.',
+        imagem: compartilhaImg,
+      },
+      {
+        titulo: 'Descoberta de Novos Artistas',
+        descricao: 'Explore novas vozes e gêneros musicais com recomendações inteligentes.',
+        imagem: sadImg,
+      },
+      {
+        titulo: 'Modo Offline',
+        descricao: 'Ouça suas músicas sem precisar de internet.',
+        imagem: offlineImg,
+      },
     ]
   
     return (
       <section className="py-16 px-6 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-10 text-emerald-800">Funcionalidades</h2>
-        <div className="grid md:grid-cols-3 gap-10">
-          {features.map((f, i) => (
-            <div key={i} className="border p-6 rounded-lg shadow hover:shadow-lg transition">
-              <h3 className="text-xl font-semibold mb-2 text-emerald-800">{f.title}</h3>
-
-              <p>{f.desc}</p>
+        <h2 className="text-3xl font-bold mb-12">Funcionalidades do Melodia</h2>
+  
+        <div className="grid gap-12 md:grid-cols-3">
+          {funcionalidades.map((item, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 rounded-xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col items-center"
+            >
+              <img
+                src={item.imagem}
+                alt={item.titulo}
+                className="h-56 w-auto rounded-xl object-cover mb-6 shadow-md"
+              />
+              <h3 className="text-xl font-semibold mb-2">{item.titulo}</h3>
+              <p className="text-gray-600">{item.descricao}</p>
             </div>
           ))}
         </div>
       </section>
     )
   }
-
+  
   export default Funcionalidades

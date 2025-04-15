@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import Musica from './routes/Musica'
+import { Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero'
 import Depoimentos from './components/Depoimentos'
 import Apresentacao from './components/Apresentacao'
@@ -7,15 +8,27 @@ import Formulario from './components/Formulario'
 import Footer from './components/Footer'
 import './styles.css'
 
+
 function App() {
   return (
     <div className="font-sans bg-white text-gray-800">
-      <Hero />
-      <Apresentacao />
-      <Depoimentos />
-      <Funcionalidades />
-      <Formulario />
-      <Footer />
+     <Routes>
+        {/* Página principal com todas as seções */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Apresentacao />
+              <Depoimentos />
+              <Funcionalidades />
+              <Formulario />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/musica" element={<Musica />} />
+      </Routes>
    </div>
   )
 }

@@ -7,7 +7,7 @@ function Depoimentos() {
   
     return (
       <section className="py-16 px-6 bg-gray-50 text-center">
-        <h2 className="text-3xl font-bold mb-10 text-emerald-800">O que estão dizendo?</h2>
+        <h2 className="text-3xl font-bold mb-10 text-black-800">O que estão dizendo?</h2>
         <div className="grid md:grid-cols-3 gap-10">
           {users.map((u, i) => (
             <div key={i} className="bg-white p-6 rounded shadow">
