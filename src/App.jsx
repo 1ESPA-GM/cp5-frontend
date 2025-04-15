@@ -1,4 +1,5 @@
 import Musica from './routes/Musica'
+import Nav from './components/Nav'
 import { Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero'
 import Depoimentos from './components/Depoimentos'
@@ -13,11 +14,11 @@ function App() {
   return (
     <div className="font-sans bg-white text-gray-800">
      <Routes>
-        {/* Página principal com todas as seções */}
         <Route
           path="/"
           element={
             <>
+              <Nav />
               <Hero />
               <Apresentacao />
               <Depoimentos />
